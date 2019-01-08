@@ -16,7 +16,7 @@
 
 # Kernel
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32S1,32S1 androidboot.selinux=permissive androidboot.configfs=true
-BOARD_KERNEL_BASE := 0x40000000
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive androidboot.configfs=true
+BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x15000000 --tags_offset 0x14000000
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x14f88000 --tags_offset 0x13f88000
